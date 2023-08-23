@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webview Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/bootstrap.min.css">
+  <link rel="stylesheet" href="./highlight/styles/default.min.css">
+	<script type="text/javascript" src="../node_modules/androidjs/lib/androidjs.js"></script>
+  <script src="./highlight/highlight.js"></script>
+  <script src="./highlight/languages/javascript.min.js"></script>
+  <script src="./highlight/languages/bash.min.js"></script>
+  <script src="./highlight/languages/typescript.min.js"></script>
+  <script src='route.js'></script>
+  <script src='./tailwind.js'></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<style>
+	.app{
+		font-size:30px;
+	}
+</style>
+
+<body class="bg-slate-900 text-gray-400">
+  <div id="app">
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
